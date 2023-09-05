@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(68, 22, 1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+header {
+    width: 100%;
+}
+
+.simuladorcuotas {    
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: rgb(77, 75, 75);
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.simuladorcuotas input {
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.simuladorcuotas button {
+    margin-top: 5%;
+    width: 25%;
+    height: 25%;
+    margin-left: 38%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    padding-top: 2%;
+}
+/* ===== Contactos =====*/
+
+/*.container-contactos input {
+    display: block;
+    margin-top: 8%;
+    height: 35px;
+    width: 100%;
+    border-radius: 7px;
+}*/
+
+/*.container-contactos h2 {
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.container-contactos button {
+    margin-top: 8%;
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+}*/
