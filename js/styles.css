@@ -1,5 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(68, 22, 1);
+    background-color: black;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
@@ -7,58 +13,159 @@ body {
     color: white;
 }
 
-header {
-    width: 100%;
+a {
+    color: white;
+    text-decoration: none;
 }
 
-.simuladorcuotas {    
+a:hover {
+    color: blue;
+}
+
+.header {
     display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    border-radius: 15px;
-    margin-top: 10%;
-    margin-left: 30%;
-    margin-right: 30%;
-    background-color: rgb(77, 75, 75);
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
-.simuladorcuotas input {
-    margin-right: 30%;
-    margin-left: 30%;
-}
-
-.simuladorcuotas button {
-    margin-top: 5%;
-    width: 25%;
-    height: 25%;
-    margin-left: 38%;
-    justify-content: center;
+    background-color: rgb(139, 76, 3);
     align-items: center;
+    width: 100%;
+    height: 10vh;
 }
+
+.h1-motores {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    padding-top: 2%;
+}
+
+.seccion-modelos3 section {
+    display: none;
+}
+
+.seccion-toyota {
+    margin-top: 2%;
+    border: solid 2px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion-honda {
+    margin-top: 5%;
+    border: solid 2px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion-ford {
+    margin-top: 5%;
+    border: solid 2px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion-chevrolet {
+    margin-top: 5%;
+    border: solid 2px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion-hyundai {
+    margin-top: 5%;
+    border: solid 2px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion-renault {
+    margin-top: 5%;
+    border: solid 2px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion-peugeot {
+    margin-top: 5%;
+    border: solid 2px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion-fiat {
+    margin-top: 5%;
+    border: solid 2px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion-mercedesbenz {
+    margin-top: 5%;
+    border: solid 2px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion-landrover {
+    margin-top: 5%;
+    border: solid 2px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion-nissan {
+    margin-top: 5%;
+    border: solid 2px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion-volkswagen {
+    margin-top: 5%;
+    border: solid 2px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion-citroen {
+    margin-top: 5%;
+    border: solid 2px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion-audi {
+    margin-top: 5%;
+    border: solid 2px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion-bmw {
+    margin-top: 5%;
+    border: solid 2px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 footer {
     padding-top: 2%;
 }
-/* ===== Contactos =====*/
-
-/*.container-contactos input {
-    display: block;
-    margin-top: 8%;
-    height: 35px;
-    width: 100%;
-    border-radius: 7px;
-}*/
-
-/*.container-contactos h2 {
-    text-align: center;
-    padding-bottom: 3%;
-}
-
-.container-contactos button {
-    margin-top: 8%;
-    height: 30px;
-    width: 100%;
-    border-radius: 10px;
-}*/
