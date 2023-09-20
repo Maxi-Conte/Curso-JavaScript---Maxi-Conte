@@ -187,68 +187,16 @@ for (const marca in marcasDeAutos) {
   }
 }
 
-/*const marcaSeleccionar = document.getElementById('marcaSeleccionar');
-const seccionesMarcas = document.querySelectorAll('.seccion-modelos section');
-
-marcaSeleccionar.addEventListener('change', function() {
-    const marcaSeleccionada = marcaSeleccionar.value;
-
-    seccionesMarcas.forEach(seccion => {
-        seccion.style.display = 'none';
-    });
-
-    if (marcaSeleccionada) {
-        const seccionMostrar = document.getElementById(`seccion${marcaSeleccionada}`);
-        if (seccionMostrar) {
-            seccionMostrar.style.display = 'block';
-        }
-    }
-});*/
-
-
-
-/*const marcaSeleccionar = document.getElementById('marcaSeleccionar');
-const seccionesMarcas = document.querySelectorAll('.seccion-modelos section');
-
-let marcaPreviamenteSeleccionada = '';
-
-marcaSeleccionar.addEventListener('change', function() {
-    const marcaSeleccionada = marcaSeleccionar.value;
-
-    // Ocultar la sección de la marca previamente seleccionada
-    if (marcaPreviamenteSeleccionada) {
-        const seccionOcultar = document.getElementById(`seccion${marcaPreviamenteSeleccionada}`);
-        if (seccionOcultar) {
-            seccionOcultar.style.display = 'none';
-        }
-    }
-
-    // Mostrar la sección de la marca seleccionada
-    if (marcaSeleccionada) {
-        const seccionMostrar = document.getElementById(`seccion${marcaSeleccionada}`);
-        if (seccionMostrar) {
-            seccionMostrar.style.display = 'block';
-        }
-    }
-
-    // Actualizar la marca previamente seleccionada
-    marcaPreviamenteSeleccionada = marcaSeleccionada;
-});*/
-
-
-
 const marcaSeleccionar = document.getElementById('marcaSeleccionar');
 const seccionesMarcas = document.querySelectorAll('.seccion-modelos3 section');
 
 marcaSeleccionar.addEventListener('change', function() {
     const marcaSeleccionada = marcaSeleccionar.value;
 
-    // Ocultar todas las secciones de marca
     seccionesMarcas.forEach(seccion => {
         seccion.style.display = 'none';
     });
 
-    // Mostrar solo la sección de la marca seleccionada
     if (marcaSeleccionada) {
         const seccionMostrar = document.getElementById(`seccion${marcaSeleccionada}`);
         if (seccionMostrar) {
@@ -256,14 +204,6 @@ marcaSeleccionar.addEventListener('change', function() {
         }
     }
 });
-
-
-
-
-
-
-
-
 
 
 //Local Storage
