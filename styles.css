@@ -45,12 +45,30 @@ h2 {
     display: none;
 }
 
+
+/* === Toyota === */
+
 .seccion-toyota {
-    margin-top: 2%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.toyota {
     border: solid 2px;
     border-radius: 7px;
-    display: flex;
-    justify-content: space-evenly;
+    margin-right: 23%;
+    margin-left: 23%;
+    margin-top: 5%;
+    padding-bottom: 2%;
+    padding-top: 1%;
+}
+
+.toyota h2 {
+    padding-right: 50%;
+}
+
+.toyota p {
+    padding-right: 50%;
 }
 
 .seccion-honda {

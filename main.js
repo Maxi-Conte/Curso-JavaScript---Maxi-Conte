@@ -153,7 +153,6 @@ let marcasDeAutos = {
 
 };
 
-
 function mostrarModelosDeMarca(marca) {
   if (marcasDeAutos.hasOwnProperty(marca)) {
     console.table(marcasDeAutos[marca]);
