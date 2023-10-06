@@ -41,146 +41,173 @@ h2 {
     padding-top: 2%;
 }
 
-.seccion-modelos3 section {
+/*.seccion-modelos3{
     display: none;
-}
-
+}*/
 
 /* === Toyota === */
 
-.seccion-toyota {
-    justify-content: space-evenly;
-    display: flex;
+.carrusel-toyota {
+    margin-top: 15%;
 }
 
-.toyota {
-    border: solid 2px;
-    border-radius: 7px;
-    margin-right: 23%;
-    margin-left: 23%;
-    margin-top: 5%;
-    padding-bottom: 2%;
-    padding-top: 1%;
+.carrusel-toyota img {
+    width: 50%;
+    height: 60%;
 }
 
-.toyota h2 {
-    padding-right: 50%;
+/* === Honda === */
+
+.carrusel-honda {
+    margin-top: 15%;
 }
 
-.toyota p {
-    padding-right: 50%;
+.carrusel-honda img{
+    width: 40%;
+    height: 50%;
 }
 
-.seccion-honda {
-    margin-top: 5%;
-    border: solid 2px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-evenly;
+/* === Ford === */
+
+.carrusel-ford {
+    margin-top: 15%;
 }
 
-.seccion-ford {
-    margin-top: 5%;
-    border: solid 2px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-evenly;
+.carrusel-ford img {
+    width: 40%;
+    height: 50%;
 }
 
-.seccion-chevrolet {
-    margin-top: 5%;
-    border: solid 2px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-evenly;
+/* === Chevrolet === */
+
+.carrusel-chevrolet {
+    margin-top: 15%;
 }
 
-.seccion-hyundai {
-    margin-top: 5%;
-    border: solid 2px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-evenly;
+.carrusel-chevrolet img {
+    width: 40%;
+    height: 50%;
 }
 
-.seccion-renault {
-    margin-top: 5%;
-    border: solid 2px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-evenly;
+/* === Hyundai === */
+
+.carrusel-hyundai {
+    margin-top: 15%;
 }
 
-.seccion-peugeot {
-    margin-top: 5%;
-    border: solid 2px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-evenly;
+.carrusel-hyundai img {
+    width: 40%;
+    height: 50%;
 }
 
-.seccion-fiat {
-    margin-top: 5%;
-    border: solid 2px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-evenly;
+/* === Renault ===*/
+
+.carrusel-renault {
+    margin-top: 15%;
 }
 
-.seccion-mercedesbenz {
-    margin-top: 5%;
-    border: solid 2px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-evenly;
+.carrusel-renault img {
+    width: 30%;
+    height: 60%;
 }
 
-.seccion-landrover {
-    margin-top: 5%;
-    border: solid 2px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-evenly;
+/* === Peugeot ===*/
+
+.carrusel-peugeot {
+    margin-top: 15%;
 }
 
-.seccion-nissan {
-    margin-top: 5%;
-    border: solid 2px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-evenly;
+.carrusel-peugeot img {
+    width: 40%;
+    height: 50%;
 }
 
-.seccion-volkswagen {
-    margin-top: 5%;
-    border: solid 2px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-evenly;
+/* === Fiat ===*/
+
+.carrusel-fiat {
+    margin-top: 15%;
 }
 
-.seccion-citroen {
-    margin-top: 5%;
-    border: solid 2px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-evenly;
+.carrusel-fiat img {
+    width: 50%;
+    height: 60%;
 }
 
-.seccion-audi {
-    margin-top: 5%;
-    border: solid 2px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-evenly;
+/* === Merceds Benz ===*/
+
+.carrusel-mercedesbenz {
+    margin-top: 15%;
 }
 
-.seccion-bmw {
-    margin-top: 5%;
-    border: solid 2px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-evenly;
+.carrusel-mercedesbenz img {
+    width: 30%;
+    height: 55%;
+}
+
+/* === Land Rover ===*/
+
+.carrusel-landrover {
+    margin-top: 15%;
+}
+
+.carrusel-landrover img {
+    width: 40%;
+    height: 50%;
+}
+
+/* === Nissan ===*/
+
+.carrusel-nissan {
+    margin-top: 15%;
+}
+
+.carrusel-nissan img {
+    width: 35%;
+    height: 60%;
+}
+
+/* === Volkswagen ===*/
+
+.carrusel-volkswagen {
+    margin-top: 15%;
+}
+
+.carrusel-volkswagen img {
+    width: 35%;
+    height: 63%;
+}
+
+/* === Citroen ===*/
+
+.carrusel-citroen {
+    margin-top: 15%;
+}
+
+.carrusel-citroen img {
+    width: 35%;
+    height: 60%;
+}
+
+/* === Audi ===*/
+
+.carrusel-audi {
+    margin-top: 15%;
+}
+
+.carrusel-audi img {
+    width: 35%;
+    height: 60%;
+}
+
+/* === BMW ===*/
+
+.carrusel-bmw {
+    margin-top: 15%;
+}
+
+.carrusel-bmw img {
+    width: 35%;
+    height: 60%;
 }
 
 

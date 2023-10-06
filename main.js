@@ -186,8 +186,10 @@ for (const marca in marcasDeAutos) {
   }
 }
 
-const marcaSeleccionar = document.getElementById('marcaSeleccionar');
-const seccionesMarcas = document.querySelectorAll('.seccion-modelos3 section');
+//Mostrar y ocultar las marcas
+
+/*const marcaSeleccionar = document.getElementById('marcaSeleccionar');
+const seccionesMarcas = document.querySelectorAll('.seccion-modelos3 container');
 
 marcaSeleccionar.addEventListener('change', function() {
     const marcaSeleccionada = marcaSeleccionar.value;
@@ -202,7 +204,7 @@ marcaSeleccionar.addEventListener('change', function() {
             seccionMostrar.style.display = 'block';
         }
     }
-});
+});*/
 
 
 //Local Storage
@@ -255,6 +257,32 @@ document.getElementById('recuperarDatos').addEventListener('click', function() {
     alert('No hay datos guardados en Local Storage');
   }
 });
+
+
+
+document.getElementById('mostrarDetalles').addEventListener('click', function() {
+  const url = 'ruta/al/archivo/datos.json';
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('No se pudo cargar el archivo JSON');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.table(data['Toyota']);
+    })
+    .catch(error => {
+      console.error('Error al cargar el archivo JSON:', error);
+    });
+});
+
+
+
+
+
+
+
 
 
 mostrarModelosDeMarca();
