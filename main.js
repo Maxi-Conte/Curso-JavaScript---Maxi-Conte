@@ -186,42 +186,19 @@ for (const marca in marcasDeAutos) {
   }
 }
 
-//Mostrar y ocultar las marcas
-
-/*const marcaSeleccionar = document.getElementById('marcaSeleccionar');
-const seccionesMarcas = document.querySelectorAll('.seccion-modelos3 container');
-
-marcaSeleccionar.addEventListener('change', function() {
-    const marcaSeleccionada = marcaSeleccionar.value;
-
-    seccionesMarcas.forEach(seccion => {
-        seccion.style.display = 'none';
-    });
-
-    if (marcaSeleccionada) {
-        const seccionMostrar = document.getElementById(`seccion${marcaSeleccionada}`);
-        if (seccionMostrar) {
-            seccionMostrar.style.display = 'block';
-        }
-    }
-});*/
-
 
 //Local Storage
+
 
 document.getElementById('guardarDatos').addEventListener('click', function() {
   const detallesVehiculo = document.getElementById('detallesVehiculo').innerHTML;
   localStorage.setItem('detallesVehiculo', detallesVehiculo);
-  alert('Datos guardados en Local Storage');
 });
 
 document.getElementById('recuperarDatos').addEventListener('click', function() {
   const detallesVehiculoGuardados = localStorage.getItem('detallesVehiculo');
   if (detallesVehiculoGuardados) {
       document.getElementById('detallesVehiculo').innerHTML = detallesVehiculoGuardados;
-      alert('Datos recuperados de Local Storage');
-  } else {
-      alert('No hay datos guardados en Local Storage');
   }
 });
 
@@ -237,13 +214,13 @@ function agregarDetallesVehiculo(detalles) {
   const detallesVehiculo = document.getElementById('detallesVehiculo');
   detallesVehiculo.innerHTML = detalles; 
 }
+
 document.getElementById('guardarDatos').addEventListener('click', function() {
   const detallesVehiculo = {
     marca: marcaSeleccionar.value,
     detalles: document.getElementById('detallesVehiculo').innerHTML,
   };
   localStorage.setItem('detallesVehiculo', JSON.stringify(detallesVehiculo));
-  alert('Datos guardados en Local Storage');
 });
 
 document.getElementById('recuperarDatos').addEventListener('click', function() {
@@ -252,30 +229,33 @@ document.getElementById('recuperarDatos').addEventListener('click', function() {
     const detalles = JSON.parse(detallesVehiculoGuardados);
     agregarDetallesVehiculo(detalles.detalles);
     marcaSeleccionar.value = detalles.marca;
-    alert('Datos recuperados de Local Storage');
-  } else {
-    alert('No hay datos guardados en Local Storage');
   }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
 
+  const detallesVehiculoElement = document.getElementById('detallesVehiculo');
+  const marcaSeleccionarElement = document.getElementById('marcaSeleccionar');
 
-document.getElementById('mostrarDetalles').addEventListener('click', function() {
-  const url = 'ruta/al/archivo/datos.json';
-  fetch(url)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('No se pudo cargar el archivo JSON');
-      }
-      return response.json();
-    })
-    .then(data => {
-      console.table(data['Toyota']);
-    })
-    .catch(error => {
-      console.error('Error al cargar el archivo JSON:', error);
-    });
+  document.getElementById('guardarDatos').addEventListener('click', function() {
+    const detallesVehiculo = detallesVehiculoElement.innerHTML;
+    const detallesVehiculoData = {
+      marca: marcaSeleccionarElement.value,
+      detalles: detallesVehiculo,
+    };
+    localStorage.setItem('detallesVehiculo', JSON.stringify(detallesVehiculoData));
+  });
+
+  document.getElementById('recuperarDatos').addEventListener('click', function() {
+    const detallesVehiculoGuardados = localStorage.getItem('detallesVehiculo');
+    if (detallesVehiculoGuardados) {
+      const detalles = JSON.parse(detallesVehiculoGuardados);
+      detallesVehiculoElement.innerHTML = detalles.detalles;
+      marcaSeleccionarElement.value = detalles.marca;
+    }
+  });
 });
+
 
 
 
